@@ -1,0 +1,914 @@
+* {
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #353535;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none !important;
+    font-size: 1rem!important;
+}
+
+header nav ul li a:hover {
+    color: white !important;
+}
+
+p {
+    color: #7b7b7b;
+    line-height: 2;
+    font-size: 0.95rem;
+}
+
+h1, h3, h4, h5 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 8rem;
+}
+
+h3 {
+    font-size: 2.85rem;
+    letter-spacing: 7px;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+h4 {
+    font-size: 1.15rem;
+}
+
+button {
+    cursor: pointer;
+    background: #d7272a;
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1.25rem 3rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+.menu-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.active {
+    color: #d7272a !important;
+}
+
+#menu {
+    position: relative;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem 0;
+    z-index: 1;
+}
+
+.top-fitness-logo {
+    margin: 0 2rem;
+    border: 2px solid #fff;
+    padding: 15px 10px 7px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.top-fitness-logo a {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 20px;
+}
+
+.top-fitness-logo a:hover {
+    text-decoration: none;
+}
+
+.fit-ness-logo {
+    margin: 0 2rem;
+    border: 2px solid #fff;
+    padding: 15px 10px 7px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.fit-ness-logo a {
+    font-size: 28px;
+    color: #fff;
+    line-height: 20px;
+}
+
+header nav {
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header nav ul.menu-flex {
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+header nav ul li a:hover {
+    color: #d7272a !important;
+}
+
+.fit-ness-logo a:hover {
+    text-decoration: none;
+}
+
+#header-logo-mobile {
+    display: none;
+}
+
+#search {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -7px;
+    width: auto;
+    padding: 0;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+#hamburger-menu {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0 1rem;
+    display: none;
+}
+
+#hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.banner-bg{
+    background-image: url(../images/revslide3.jpg);
+    min-height: 80vh;
+    max-width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner-bg h3
+{
+    font-size: 60px;
+}
+.banner-bg p{
+    color: white;
+}
+.mouse-move
+{
+    width: 30px;
+    height:60px;
+    border: 4px solid #f0932b;
+    border-radius: 60px;
+    position: relative;
+}
+.mouse-move::before
+{
+    content:'';
+    width: 10px;
+    height:10px;
+    position: absolute;
+    top: 30px;
+    background: #f0932b;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    animation: mouse 2s infinite;
+}
+.start-scroll
+{
+    font-size:25px;
+    color:#fff;
+    text-transform: uppercase;
+}
+@keyframes mouse {
+    from{
+        opacity: 1;
+        top: 10px;
+    }
+    to{
+        opacity: 0;
+        top: 40px;
+    }
+}
+.content-inner {
+	width:100%;
+	color: #fff;
+	position: relative;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	backface-visibility: hidden;
+	transition: .9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.content-inner > * {
+	backface-visibility: hidden;
+	transition: .9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.content-inner:hover .content-front {
+	transform: rotateY(-180deg);
+}
+.content-inner:hover .content-back {
+	transform: rotateY(0deg);
+}
+.content-inner .content-front,
+.content-inner .content-back {
+	position: relative;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	backface-visibility: hidden;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content-front {
+	background: #292929;
+	position:relative;
+	cursor:pointer;
+}
+.content-front  .cf-inner:before {
+	top:20px;
+	left:20px;
+	border-left:1px dotted;
+	border-top:1px dotted;
+}
+.content-front .cf-inner:after {
+	bottom:20px;
+	right:20px;
+	border-right:1px  dotted;
+	border-bottom:1px dotted;
+}
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: repeat;
+    background-origin: content-box;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    z-index: 3;
+}
+.content-front  .cf-inner:before , .content-front  .cf-inner:after {
+	content:'';
+	position:absolute;
+	width:50px;
+	height:50px;
+	border-color:rgba(255,255,255, 0.4);
+	z-index:10;
+}
+.content-inner .content-back {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	transform: rotateY(180deg);
+	background: #292929;
+}
+.content-inner .cf-inner {
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	width:100%;
+	padding:150px 30px;
+}
+.content-inner .cf-inner .inner {
+	align-items: stretch;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	backface-visibility: hidden;
+	transform: translateZ(95px) scale(0.81);
+	text-align: center;
+	position:relative;
+	z-index:2;
+} 
+.content-back i {
+	font-size:54px;
+	position:relative;
+}
+.dec-icon {
+	position:relative;
+	display:inline-table;
+	width:80px;
+	height:80px;
+}
+.dec-icon:before , .dec-icon:after {
+	content:'';
+	position:absolute;
+	width:60px;
+	height:10px;
+	border-radius:10px;
+	background:rgba(255,255,255,0.1);
+}
+.dec-icon:before {
+	left:-15px;
+	top:12px;
+}
+.dec-icon:after  {
+	right:-15px;
+	bottom:12px;
+}
+.dec-icon i {
+	z-index:3;
+}
+.content-back .dec-icon {
+	top:-20px;
+}
+
+.content-inner .cf-inner .inner p {
+	color:#fff;
+}
+.content-back:after  {
+	position:absolute;
+    content: '\25CF\25CF\25CF';
+	width:50px;
+	left:50%;
+	bottom:30px;
+	margin-left:-25px;
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+.serv-num {
+	position:absolute;
+	bottom:20px;
+	left:30px;
+	color:#fff;
+	z-index:3;
+	font-size:20px;
+}
+.content-inner .cf-inner .inner h2  {
+	position:relative;
+	font-size:22px;
+	font-weight:800;
+	padding-bottom:20px;
+}
+.content-inner .cf-inner .inner h2:after {
+	content:'';
+	position:absolute;
+	top:-30px;
+	margin-left:-25px;
+	left:50%;
+	width:50px;
+	height:2px;
+}
+.content-inner .content-front h4{
+	display:inline-block;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:12px;
+	letter-spacing:2px;
+	margin:0 4px;
+}
+.content-inner .cf-inner .inner h2:before {
+	content:'';
+	position:absolute;
+	left:50%;
+	bottom:10px;
+	width:20px;
+	height:2px;
+	margin-left:-10px;
+}
+.our-class h4.our-classes
+{
+   font-size:40px;
+   background: linear-gradient(to right, #5852ce 0px,#d3349c 200px);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.bg-mid
+{
+    background-image: url(../images/homelayer-2-flipped.jpg);
+    min-height:65vh;
+    background-position: center center;
+    background-size: cover;
+}
+.bg-mid h4{
+    font-size: 40px;
+    background: linear-gradient(to right, #5852ce 0px,#d3349c 200px);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
+}
+.bg-mid p:nth-child(2)
+{
+    font-size:25px;
+    line-height:25px;
+    color:white;
+    margin: 4% 0;
+}
+.bg-mid p:nth-child(3),.bg-mid p:nth-child(4)
+{
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+}
+.bmi-caculator table thead {
+    font-size: 20px;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #29282d;
+}
+.bmi-caculator table 
+{
+    border-spacing: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+.bmi-caculator table td {
+    text-align: left;
+    padding: 17px 20px 17px 40px;
+}
+.bmi-caculator table tr th
+{
+    text-align: left;
+    padding: 18px 20px 18px 40px;
+}
+.bmi-caculator table tbody tr td:nth-child(1)
+{
+    border-right: 1px dashed #a7a6a7;
+}
+.bmi-caculator table tbody tr
+{
+    border: none;
+    color: #2d2d2d;
+    border-bottom: 1px dashed #a7a6a7;
+}
+.bmi-caculator table tbody tr:last-child
+{
+    border-bottom: 0;
+}
+.info-caculator input[type= text],.info-user-sex select{
+    background-color: #fff;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding: 15px 20px;
+    border: 1px solid #e1e1e1;
+    width: 100%;
+    margin: 0 0 25px;
+    line-height: 20px;
+    font-weight: inherit;
+    color: #313646;
+    border-radius: 0;
+    outline: 0;
+    cursor: text;
+}
+.info-user-sex select.info-sex option{
+    width: 100%;
+    background-color: #fff;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding: 15px 20px;
+    border: 1px solid #e1e1e1;
+    outline: none;
+    min-height: 2em!important;
+    color: #313646;
+}
+.caculate-bmi div
+{
+    --c: #d7272a;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    cursor: pointer;
+}
+.caculate-bmi div span
+{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+.caculate-bmi div:hover
+{
+    color:white;
+}
+.caculate-bmi div:hover span
+{
+    transform: translateY(0) scale(2);
+}
+.caculate-bmi div span:nth-child(1)
+{
+    --n: 1;
+}
+.caculate-bmi div span:nth-child(2)
+{
+    --n: 2;
+}
+.caculate-bmi div span:nth-child(3)
+{
+    --n: 3;
+}
+.caculate-bmi div span:nth-child(4)
+{
+    --n: 4;
+}
+.content-work-out.detail-content h4
+{
+    color: #404040;
+    padding-bottom: 2%;
+    position: relative;
+}
+.content-work-out.detail-content h4::after
+{
+    position: absolute;
+    content:'';
+    width: 20px;
+    height: 1px;
+    background-color: #404040;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform:translate(-50%, 0%);
+}
+/* footer */
+footer {
+    background: url('https://onclickwebdesign.com/wp-content/uploads/footer-bg.jpg') top center no-repeat;
+    background-size: cover;
+    padding-bottom: 2rem;
+    padding: 9px 0;
+}
+
+.footer-container {
+    max-width: 625px;
+    margin: 0 auto;
+}
+
+#footer-logo {
+    display: inline-block;
+}
+
+footer nav {
+    margin: 2rem 0 6rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+footer .mailing-list {
+    position: relative;
+}
+
+.footer-container ul li a:hover {
+    color: #d7272a;
+}
+
+footer input {
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: 2px solid #fff;
+    font-size: 13px;
+    font-style: italic;
+    padding-left: 2rem;
+}
+
+footer button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    padding: 0.74rem 3rem;
+}
+
+footer ul.social-icons {
+    max-width: 400px;
+    margin: 4rem auto 3rem;
+}
+
+footer ul.social-icons li a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+footer img.bicep {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+footer small {
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 300;
+    margin: 0 0.5rem;
+}
+
+.footer-container small a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-container small a:hover {
+    color: #d7272a;
+}
+
+#search-container {
+    background: #073B4C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+#search-container-hide {
+    color: #fff;
+    font-size: 1.75rem;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#search-container h3,
+.search-container-input {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: -50px auto 0;
+    max-width: 500px;
+}
+
+#search-container h3 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: -125px auto 0;
+}
+
+.search-container-input input {
+    width: 100%;
+    height: 64px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-left: 2rem;
+}
+
+.search-container-input button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    .gym-bg-decoration {
+        display: none;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    header nav {
+        max-width: 775px;
+    }
+
+    .fit-ness-logo {
+        margin: 0 1rem;
+    }
+
+    .membership-cards-box .inner-container {
+        padding: 0.5rem 1.5rem 1.5rem;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .membership-cards-box h2 {
+        font-size: 3.5rem;
+    }
+
+    .personal-trainer-box {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .personal-trainer-box p {
+        font-size: 0.85rem;
+    }
+
+    .gym-bg {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    header nav {
+        display: block !important;
+    }
+}
+@media (max-width: 767px) {
+    .menu-flex
+    {
+        display: block;
+    }
+    header {
+        background: rgba(0, 0, 0, 0.85);
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+    }
+
+    #header-logo-mobile {
+        display: inline-block;
+    }
+
+    header nav {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        display: none;
+    }
+
+    header nav ul.flex {
+        display: block;
+    }
+
+    header nav ul li {
+        margin: 1rem 0;
+    }
+
+    header nav ul li:last-child {
+        margin-bottom: 2rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    #search {
+        position: static;
+        font-size: 1.5rem;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+
+    #header-logo {
+        display: none;
+    }
+    .banner-top .box .img-fluid {
+        width: 100% !important;
+    }
+    .gym-bg-content
+    {
+        margin-left: 15%;
+    }
+    .membership-cards-box .inner-container {
+        min-height: 500px;
+        background-color: #fff;
+        padding: 1rem 1rem !important;
+    }
+    .personal-trainer-box
+    {
+        min-height: 550px;
+        background-size: cover;
+    }
+}
+@media (max-width: 600px) {
+    .membership-cards-box .inner-container {
+        min-height: 500px;
+        background-color: #fff;
+        padding: 1rem 1rem !important;
+    }
+    .personal-trainer-box
+    {
+        min-height: 550px;
+        background-size: cover;
+    }
+    .gym-bg-content
+    {
+        margin-left: 2%;
+    }
+    .gym-bg
+    {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .membership-cards-box .inner-container {
+        min-height: 400px;
+    }
+    .personal-trainer-box
+    {
+        min-height: 400px;
+        background-size: cover;
+    }
+    .gym-bg-content
+    {
+        margin-left: 2%;
+    }
+    .gym-bg
+    {
+        display: none;
+    }
+}

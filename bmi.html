@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93907e36a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bmi.css">
+</head>
+
+<body>
+    <section id="menu">
+        <header>
+            <div class="container">
+                <div id="header-logo-mobile" class="top-fitness-logo">
+                    <a href="#">Fit4Life<br>Gym</a>
+                </div>
+
+                <nav>
+                    <ul class="menu-flex text-center">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Workouts</a></li>
+                        <li id="header-logo" class="fit-ness-logo">
+                            <a href="#">Fit4Life<br>Gym</a>
+                        </li>
+                        <li><a href="#">Nutrition</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li>
+                            <button id="search"><span class="fa fa-search"></span></button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button id="hamburger-menu">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                </button>
+            </div>
+        </header>
+    </section>
+    <section class="main">
+        <div class="banner-bg" style="padding-top: 16%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <h3><i>REAL FITNESS</i></h3>
+                        <p class="col-md-8 col-12">Our fully fledged fitness studio ready to go help you reach your
+                            goals</p>
+                    </div>
+                    <div class="col-12 col-md-8" style="margin-top:3%;">
+                        <div class="row">
+                            <div class="start-scroll col-4 mr-5">
+                                <i>start scrolling</i>
+                            </div>
+                            <div class="mouse-move">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bmi-caculator mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 style="color: #313646; font-size: 24px; margin-left: 19px;">BMI CALCULATOR CHART</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>BMI</th>
+                                    <th>WEIGHT STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Below 18.5</td>
+                                    <td>Underweight</td>
+                                </tr>
+                                <tr>
+                                    <td>18.5 - 24.9</td>
+                                    <td>Healthy</td>
+                                </tr>
+                                <tr>
+                                    <td>25.0 - 29.9</td>
+                                    <td>Overweight</td>
+                                </tr>
+                                <tr>
+                                    <td>30.0 - and Above</td>
+                                    <td>Obese</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6 info-caculator">
+                        <h3 style="color: #313646; font-size: 24px; margin-left: 5px; margin-bottom: 70px;">CALCULATE
+                            YOUR BMI</h3>
+                        <form action="POST" method="#">
+                            <div class="row">
+                                <div class="info-user-height col-6">
+                                    <input type="text" name="height" onchange="dataHeight(this.value)"
+                                        placeholder="Height / cm">
+                                </div>
+                                <div class="info-user-weight col-6">
+                                    <input type="text" name="weight" onchange="dataWeight(this.value)"
+                                        placeholder="Weight / kg">
+                                </div>
+                                <div class="info-user-weight col-6">
+                                    <input type="text" name="age" placeholder="Age"
+                                        placeholder="Age">
+                                </div>
+                                <div class="info-user-sex col-6">
+                                    <select class="info-sex" style="cursor: pointer" name="sex" tabindex="-1"
+                                        aria-hidden="true">
+                                        <option value="">Sex</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="col-8 caculate-bmi">
+                                    <div class="col-6" onclick='BMI()'>CACULATE
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-1 col-2 human-image-bmi">
+                            </div>
+                            <div class="col-md-3 col-4 human-comment pt-3">
+                                <span class="content-comment "></span>
+                            </div>
+                            <div class="col-md-8 col-6 pt-3">
+                                <span class="index-bmi"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container content-work-out detail-content mt-5">
+                    <div class="recommendComment"></div>
+                    <div class="row mt-5 pageComment">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-mid mt-5" style="padding-top:5%">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-12">
+                        <h4><i>CALCULATE YOUR BMI</i></h4>
+                        <p>Our studio is fully equipped and ready to help you achieve your goals.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam, diam quis tempor
+                            ultrices, sem lorem sollicitudin lorem, condimentum pulvinar.</p>
+                        <p>Cras turpis risus, aliquet a elit sit amet, hendrerit scelerisque dolor. Phasellus vel tempor
+                            nisl. tempor ultrices, sem lorem sollicitudin lorem, mi tellus et justo condimentum pulvinar
+                            mi tellus et justo.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="our-class">
+            <div class="container">
+                <h4 class="mb-5 mt-5 our-classes"><i>OUR CLASSES</i></h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="content-inner">
+                            <div class="content-front">
+                                <div class="cf-inner">
+                                    <div class="bg" style="background-image: url(images/service3.jpg)"></div>
+                                    <div class="overlay"> </div>
+                                    <div class="inner">
+                                        <h4>WEIGHT TRAINING</h4>
+                                    </div>
+                                    <div class="serv-num">01.</div>
+                                </div>
+                            </div>
+                            <div class="content-back">
+                                <div class="cf-inner">
+                                    <div class="inner">
+                                        <div class="dec-icon">
+                                            <i class="fas fa-dumbbell"></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar
+                                            neque. Nulla finibus lobortis pulvinar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-inner">
+                            <div class="content-front">
+                                <div class="cf-inner">
+                                    <div class="bg" style="background-image: url(images/service2.jpg)"></div>
+                                    <div class="overlay"> </div>
+                                    <div class="inner">
+                                        <h4>PERSON TRAINING</h4>
+                                    </div>
+                                    <div class="serv-num">02.</div>
+                                </div>
+                            </div>
+                            <div class="content-back">
+                                <div class="cf-inner">
+                                    <div class="inner">
+                                        <div class="dec-icon">
+                                            <i class="fas fa-running"></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar
+                                            neque. Nulla finibus lobortis pulvinar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content-inner">
+                            <div class="content-front">
+                                <div class="cf-inner">
+                                    <div class="bg" style="background-image: url(images/service1.jpg)"></div>
+                                    <div class="overlay"> </div>
+                                    <div class="inner">
+                                        <h4>LADIES BOXING</h4>
+                                    </div>
+                                    <div class="serv-num">03.</div>
+                                </div>
+                            </div>
+                            <div class="content-back">
+                                <div class="cf-inner">
+                                    <div class="inner">
+                                        <div class="dec-icon">
+                                            <i class="fas fa-dumbbell"></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar
+                                            neque. Nulla finibus lobortis pulvinar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5 pt-5">
+        <div class="footer-container text-center">
+            <div id="footer-logo" class="fit-ness-logo">
+                <a href="#">Fit4Life<br>Gym</a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">Instructors</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="mailing-list">
+                <input type="text" placeholder="YOUR EMAIL" />
+                <button>SIGN UP</button>
+            </div>
+
+            <ul class="social-icons">
+                <li><a href="#"><span class="fab fa-pinterest"></span></a></li>
+                <li><a href="#"><span class="fab fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                <li><a href="#"><span class="fab fa-behance"></span></a></li>
+            </ul>
+
+            <img src="https://onclickwebdesign.com/wp-content/uploads/footer-icon.png" class="bicep"
+                alt="Bicep flex icon" />
+
+            <small>
+                Copyright &copy;2021 All rights reserved | This template is made with <span class="fa fa-heart"></span>
+                by <a href="#">B52</a>
+            </small>
+        </div>
+    </footer>
+
+    <div id="search-container">
+        <span id="search-container-hide" class="fa fa-times"></span>
+        <h3>Search</h3>
+        <div class="search-container-input">
+            <input type="text" name="search" placeholder="Search this site" />
+            <button>Search</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        // document ready function
+        $(function () {
+            // store jquery references to elements in const variables
+            const headerNav = $('header nav');
+            const hamburgerMenu = $('#hamburger-menu');
+            const search = $('#search');
+            const searchContainerHide = $('#search-container-hide');
+            const searchContainer = $('#search-container');
+            // initialize event handling
+            hamburgerMenu.on('click', () => {
+                headerNav.toggle();
+            });
+
+            search.on('click', () => {
+                searchContainer.css({
+                    'opacity': '1',
+                    'visibility': 'visible',
+                    'z-index': '100'
+                });
+            });
+
+            searchContainerHide.on('click', () => {
+                searchContainer.css({
+                    'opacity': '0',
+                    'visibility': 'hidden',
+                    'z-index': '0'
+                });
+            });
+
+        });
+        loadData = (dataType, count) => {
+            $.ajax({
+                url: "data.json",
+                method: "get",
+                data: {},
+                success: (res) => {
+                    var dem = 0;
+                    console.log(res);
+                    var courseExercises = document.querySelector('.pageComment')
+                    res.forEach((val, key) => {
+                        if(val.type === dataType && dem <= count)
+                        {
+                        var x= "<a href=\"#\" class=\"col-md-4 col-12\" style=\"text-decoration: none;\">\n" +
+                    "                            <img class=\"img-fluid\" src=\""+val.image+"\" alt=\"\">\n" +
+                    "                            <h5 class=\"mt-3 mb-2\" style=\"color: #d7272a\">"+val.title+"</h5>\n" +
+                    "                            <p>"+val.content+"</p>\n" +
+                    "                        </a>\n"
+                    courseExercises.innerHTML += x;
+                        }
+                    });
+                }
+            })
+        }
+        var valHeight = '';
+        var valWeight = '';
+        dataHeight = (val) => {
+            valHeight = val;
+            console.log(valHeight);
+        }
+        dataWeight = (val) => {
+            valWeight = val;
+            console.log(valWeight);
+        }
+        console.log(valHeight + valWeight);
+        BMI = () => {
+            var bmiElement = document.querySelector('.index-bmi');
+            var humanImg = document.querySelector('.human-image-bmi');
+            var humanComment = document.querySelector('.human-comment span');
+            var recommendComment = document.querySelector('.recommendComment');
+            contentComment = (data) => {
+                if(data === 'More Tips to Gain Weight')
+                recommendComment.innerHTML = "<h4 class=\"col-12 text-center\" style=\"color :#4cd137\">"+ data +"</h4>\n" +
+                    "    <div class=\"col-sm-9 col-12 mt-4 mr-auto ml-auto\">\n" +
+                    "        <p>1. Don’t drink water before meals. This can fill your stomach and make it harder to get in enough calories.</p>\n" +
+                    "        <p>2. Eat more often. Squeeze in an additional meal or snack whenever you can, such as before bed.</p>\n" +
+                    "        <p>3. Drink milk. Drinking whole milk to quench thirst is a simple way to get in more high-quality protein and calories.</p>\n" +
+                    "        <p>4.Try weight gainer shakes. If you’re really struggling then you can try weight gainer shakes. These are very high in protein, carbs and calories.</p>\n" +
+                    "        <p>5.Use bigger plates. Definitely use large plates if you’re trying to get in more calories, as smaller plates cause people to automatically eat less.</p>\n" +
+                    "    </div>";
+                else if(data === 'More Tips to Lose Weight')
+                {
+                    recommendComment.innerHTML = "<h4 class=\"col-12 text-center\" style=\"color :#4cd137\">"+ data +"</h4>\n" +
+                    "    <div class=\"col-sm-9 col-12 mr-auto ml-auto mt-4\">\n" +
+                    "        <p>1. Eating at regular times during the day helps burn calories at a faster rate.</p>\n" +
+                    "        <p>2. Taking probiotic supplements containing bacteria of the Lactobacillus subfamily have been shown to reduce fat mass</p>\n" +
+                    "        <p>3. Vegetables and fruits have several properties that make them effective for weight loss.</p>\n" +
+                    "        <p>4. Foods containing lots of fibre can help keep you feeling full, which is perfect for losing weight.</p>\n" +
+                    "        <p>5. Drink plenty of water</p>\n" +
+                    "        <p>6. Try to plan your breakfast, lunch, dinner and snacks for the week, making sure you stick to your calorie allowance.</p>\n" +
+                    "    </div>"
+                }
+                else{
+                    recommendComment.innerHTML = "<h4 class=\"col-12 text-center\" style=\"color :#4cd137\">"+ data +"</h4>\n" +
+                    "    <div class=\"col-sm-8 col-12 mr-auto ml-auto mt-4\">\n" +
+                    "        <p>1.Don’t Do Sugary Drinks, Including Soda and Fruit Juice</p>\n" +
+                    "        <p>2. Keep Healthy Food Around in Case You Get Hungry</p>\n" +
+                    "        <p>3. Portion control — simply eating less — or counting calories can be very useful, for obvious reasons</p>\n" +
+                    "        <p>4. Sleep is highly underrated but may be just as important as eating healthy and exercising.</p>\n" +
+                    "        <p>5. Don’t smoke</p>\n" +
+                    "        <p>6. Kale is a leafy green vegetable that’s well known for its health-promoting properties.</p>\n" +
+                    "    </div>"
+                }    
+            }
+            if (valHeight || valWeight) {
+                if (valHeight === '0' && valWeight === '0') {
+                    bmiElement.innerText = 'BMI : Error Caculate BMI. Please enter your exactly height and weight!'
+                }
+                else if (!valHeight || valHeight === '0') {
+                    bmiElement.innerText = 'BMI : Error Caculate BMI. Please enter your exactly height!';
+                }
+                else if (!valWeight || valWeight === '0') {
+                    bmiElement.innerText = 'BMI : Error Caculate BMI. Please enter your exactly weight!';
+                }
+                else {
+                    var x = Number(valWeight) / (Number(valHeight) / 100 * Number(valHeight) / 100);
+                    var valBMI = 'Your BMI is ' + x.toFixed(2);
+                    bmiElement.innerText = valBMI;
+                    if (x < 18.5) {
+                        humanComment.innerText = 'YOU ARE UNDERWEIGHT!';
+                        contentComment("More Tips to Gain Weight");
+                        humanImg.innerHTML = '<img src="images/masculine-user2.png" alt="">';
+                    }
+                    else if (18.5 <= x && x <= 24.9) {
+                        humanComment.innerText = 'YOU ARE HEALTHY!';
+                        contentComment("More Tips to Healthy");
+                        humanImg.innerHTML = '<img src="images/masculine-user5.png" alt="">';
+                        loadData(1,3);
+                    }
+                    else if (25.0 <= x && x <= 29.9) {
+                        humanComment.innerText = 'YOU ARE OVERWEIGHT!';
+                        contentComment("More Tips to Lose Weight");
+                        humanImg.innerHTML = '<img src="images/masculine-user3.png" alt="">';
+                    }
+                    else {
+                        humanComment.innerText = 'YOU ARE OBESE!';
+                        contentComment("More Tips to Lose Weight");
+                        humanImg.innerHTML = '<img src="images/masculine-user4.png" alt="">';
+                    }
+
+                }
+            }
+            else {
+                bmiElement.innerText = 'BMI : Error Caculate BMI. Please enter your height and weight!'
+            }
+
+            console.log(Number(valWeight) / (Number(valHeight) / 100 * Number(valHeight) / 100));
+        }
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

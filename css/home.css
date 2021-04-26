@@ -1,0 +1,888 @@
+*{
+    outline: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #353535;
+    position: relative;
+  }
+  h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  header nav ul li a
+  {
+      text-decoration: none!important;
+  }
+  header nav ul li a:hover {
+    color: white!important;
+  }
+  p {
+    color: #7b7b7b;
+    line-height: 2;
+    font-size: 0.95rem;
+  }
+  h1, h3, h4, h5 {
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 8rem;
+  }
+  
+  h3 {
+    font-size: 2.85rem;
+    letter-spacing: 7px;
+    color: #fff;
+    margin-bottom: 4rem;
+  }
+  h4 {
+    font-size: 1.15rem;
+  }
+  button {
+    cursor: pointer;
+    background: #d7272a;
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1.25rem 3rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+  }
+  .menu-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .active
+  {
+    color: #d7272a !important;
+  }
+  #menu
+  {
+    position: relative;
+    padding: 0;
+  }
+  header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem 0;
+    z-index: 1;
+  }
+  .top-fitness-logo {
+    margin: 0 2rem;
+    border: 2px solid #fff;
+    padding: 15px 10px 7px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  .top-fitness-logo a {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 20px;
+  }
+  
+  .top-fitness-logo a:hover {
+    text-decoration: none;
+  }
+  .fit-ness-logo {
+    margin: 0 2rem;
+    border: 2px solid #fff;
+    padding: 15px 10px 7px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  .fit-ness-logo a {
+    font-size: 28px;
+    color: #fff;
+    line-height: 20px;
+  }
+  header nav {
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  header nav ul.menu-flex {
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    font-size: 1rem !important; 
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.4s;
+  }
+  header nav ul li a:hover
+  {
+    color: #d7272a!important;
+  }
+  .fit-ness-logo a:hover {
+    text-decoration: none;
+  }
+  
+  #header-logo-mobile {
+    display: none;
+  }
+  
+  #search {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -7px;
+    width: auto;
+    padding: 0;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    color: #fff;
+  }
+  
+  #hamburger-menu {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0 1rem;
+    display: none;
+  }
+  
+  #hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+  #menu-slider .menu-slide-item {
+    position: relative;
+    height: 895px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  
+  #menu-slider .menu-slide-item .youtube-button {
+    background: #d7272a;
+    padding: 1.2rem 1.45rem;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  #menu-slider .menu-slider-marketing {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: -100px auto 0;
+  }
+  
+  #menu-slider .slick-dots {
+    bottom: 35px;
+  }
+  
+  #menu-slider .slick-dots li button:before {
+    color: #fff;
+    opacity: 1;
+    padding: 2px 0px 2px 3px;
+    line-height: 11px;
+    border: 3px solid transparent;
+    border-radius: 20px;
+  }
+  
+  #menu-slider .slick-dots li.slick-active button:before {
+    border-color: #fff;
+  }
+/* end-menu */
+/* main */
+.feature-info-container 
+{
+    position: relative;
+}
+.feature-info-container .icon
+{
+    position: relative;
+    margin: 0 auto;
+    background: #d7272a;
+    border-radius: 45px;
+    top: -35px;
+    width: 88px;
+    height: 88px;
+    line-height: 83px;
+    text-align: center;
+}
+#service
+{
+    background: #212122;
+    padding: 5% 0;
+}
+#service .box i{
+    font-size: 70px;
+    color: #d7272a;
+}
+#service .box img{
+    height: 70px;
+}
+#service .box h4
+{
+    margin : 5% 0;
+    color: white;
+}
+#service .button-see-all-services
+{
+    padding : 1% 7%;
+    font-weight: bold;
+    background-color: #d7272a;
+    color: #ffffffd1;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.4s;
+    display: inline-block;
+}
+#service .button-see-all-services:hover
+{
+    background-position: left bottom;
+    background: linear-gradient(to right,#d7272a 50%,#ffffffd1 50%) no-repeat scroll right bottom/210% 100% #d7272a;
+    color: #d7272a;
+  
+}
+.banner-three-column-lessons
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner-three-column-lessons .free-lesson
+{
+    width: 33.33%;
+    padding: 6% 6%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.banner-three-column-lessons .free-lesson p
+{
+  padding: 2% 0;
+  color: #fff;
+}
+.banner-three-column-lessons .free-lesson:nth-child(2)
+{
+  position: relative;
+}
+.banner-three-column-lessons .free-lesson a
+{
+  text-decoration: none;
+  transition : 0.4s;
+  color: white;
+}
+.banner-three-column-lessons .free-lesson a:hover
+{
+  color:#d7272a;
+}
+.banner-three-column-lessons .free-lesson a span
+{
+  transition : 0.4s;
+  margin-left: 1%;
+}
+.banner-three-column-lessons .free-lesson a:hover span
+{
+   margin-left: 4%;
+   opacity: 0;
+}
+.banner-price-lesson strong
+{
+  display: block;
+  color: #212122;
+  font-size: 0.85rem;
+  opacity: 0.6;
+  letter-spacing: 4px;
+}
+.upcoming-classes-box {
+  border: 2px solid #E5E7F3;
+  padding: 4rem 2.5rem 2.5rem;
+}
+
+.upcoming-classes-box h4 {
+  margin-bottom: 2rem;
+}
+
+.upcoming-classes-box table {
+  width: 100%;
+}
+.upcoming-classes-box table tr
+{
+  line-height: 40px;
+}
+.upcoming-classes-box table tr td {
+  padding: 13px 10px 13px 0;
+  color: #7b7b7b;
+  font-size: 1rem;
+}
+
+.upcoming-classes-box table tr td:last-child {
+  text-align: right;
+  padding-right: 0;
+}
+
+.membership-cards-box {
+  background: #d7272a;
+  padding: 1.5rem;
+}
+
+.membership-cards-box .inner-container {
+  background: url('https://onclickwebdesign.com/wp-content/uploads/woman-exercise.jpg') top center no-repeat;
+  min-height: 455px;
+  padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.membership-cards-box h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #d7272a;
+  line-height: 1;
+}
+
+.membership-cards-box h2 span {
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+.personal-trainer-box {
+  background: url('https://onclickwebdesign.com/wp-content/uploads/personal-trainer.jpg') top center no-repeat;
+  padding: 4rem 3rem 3rem;
+  min-height: 502px;
+}
+
+.personal-trainer-box h4 {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.personal-trainer-box p {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.banner-price-lesson .personal-trainer-box strong {
+  color: #fff;
+}
+.banner-price-lesson .personal-trainer-box a {
+    padding : 2% 7%;
+    font-weight: bold;
+    background-color: #d7272a;
+    color: #ffffffd1;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.4s;
+    display: inline-block;
+}
+.banner-price-lesson .personal-trainer-box a:hover{
+  background-position: left bottom;
+  background: linear-gradient(to right,#d7272a 50%,#ffffffd1 50%) no-repeat scroll right bottom/210% 100% #d7272a;
+  color: #d7272a;
+}
+.fit-ness-gallery
+{
+  height: 400px;
+}
+.gym-bg{
+  height: 600px;
+  background: #d7272a;
+  background-position: left top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.gym-bg-decoration
+{
+  position: absolute;
+    right: 0;
+    top: 0;
+    width: 44%;
+    background: #d7272a;
+    height: 600px;
+}
+.gym-bg-content {
+  margin-left: 55%;
+  padding-top: 3%;
+  color: #fff;
+}
+.gym-bg-content p{
+  color: #fff;
+  font-size:15px;
+}
+.home-gallery.col-effect:nth-child(1){
+  background: #283491;
+}
+.home-gallery.col-effect:nth-child(2){
+  background: #f18684;
+}
+.home-gallery.col-effect:nth-child(3){
+  background: #6ee2f1;
+}
+.home-gallery.col-effect h2{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+.caption{
+  max-width: 230px;
+  font-size: 12px;
+  margin: 28px 0;
+  display: none;
+}
+.caption p{
+  color: #fff;
+}
+.caption a{
+  display: inline-block;
+  border: 1px solid #fff;
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+  padding: 8px 20px;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.home-gallery.col-effect{
+    height: 100%;
+    flex: 1;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    transition: 0.6s;
+}
+.home-gallery.col-effect img{
+  width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.home-gallery.col-effect:hover{
+  flex-grow: 2.5;
+}
+.home-gallery.col-effect:hover .caption{
+  display: block;
+}
+.home-gallery.col-effect:hover h2{
+  text-align: left;
+}
+
+
+/*footer */
+footer {
+  background: url('https://onclickwebdesign.com/wp-content/uploads/footer-bg.jpg') top center no-repeat;
+  background-size: cover;
+  padding-bottom: 2rem;
+  padding: 9px 0;
+}
+
+.footer-container {
+  max-width: 625px;
+  margin: 0 auto;
+}
+
+#footer-logo {
+  display: inline-block;
+}
+
+footer nav {
+  margin: 2rem 0 6rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-container ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+footer .mailing-list {
+  position: relative;
+}
+.footer-container ul li a:hover
+{
+  color: #d7272a;
+}
+footer input {
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid #fff;
+  font-size: 13px;
+  font-style: italic;
+  padding-left: 2rem;
+}
+
+footer button {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  padding: 0.74rem 3rem;
+}
+
+footer ul.social-icons {
+  max-width: 400px;
+  margin: 4rem auto 3rem;
+}
+
+footer ul.social-icons li a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+footer img.bicep {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+footer small {
+  color: #fff;
+  opacity: 0.8;
+  font-weight: 300;
+  margin: 0 0.5rem;
+}
+
+.footer-container small a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer-container small a:hover
+{
+  color:#d7272a;
+}
+#search-container,#video-frame
+{
+  background: #073B4C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+#video-frame {
+  background: rgba(0, 0, 0, 0.8);
+}
+.video-frame-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  top: 20%;
+}
+
+.video-frame-scaler {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 56%;
+}
+
+.video-frame-scaler iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+#search-container-hide,#video-frame-hide
+{
+  color: #fff;
+  font-size: 1.75rem;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+#search-container h3,
+.search-container-input {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -50px auto 0;
+  max-width: 500px;
+}
+
+#search-container h3 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: -125px auto 0;
+}
+
+.search-container-input input {
+  width: 100%;
+  height: 64px;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding-left: 2rem;
+}
+
+.search-container-input button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+  @media (max-width: 992px) {
+    .gym-bg-decoration
+    {
+      display: none;
+    }
+    h2 {
+      font-size: 6rem;
+    }
+  
+    header nav {
+      max-width: 775px;
+    }
+  
+    .fit-ness-logo {
+      margin: 0 1rem;
+    }
+    .membership-cards-box .inner-container {
+      padding: 0.5rem 1.5rem 1.5rem;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  
+    .membership-cards-box h2 {
+      font-size: 3.5rem;
+    }
+  
+    .personal-trainer-box {
+      padding: 2rem 1.5rem 1.5rem;
+    }
+  
+    .personal-trainer-box p {
+      font-size: 0.85rem;
+    }
+    .gym-bg {
+      display:none;
+    }
+} 
+    @media (min-width: 768px) {
+      header nav {
+        display: block !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .menu-flex
+      {
+        display: block;
+      }
+      header {
+        background: rgba(0, 0, 0, 0.85);
+      }
+  
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+      }
+      
+      #header-logo-mobile {
+        display: inline-block;
+      }
+  
+      header nav {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        display: none;
+      }
+  
+      header nav ul.flex {
+        display: block;
+      }
+  
+      header nav ul li {
+        margin: 1rem 0;
+      }
+  
+      header nav ul li:last-child {
+        margin-bottom: 2rem;
+      }
+  
+      header nav ul li a {
+        font-size: 1.5rem;
+      }
+  
+      #search {
+        position: static;
+        font-size: 1.5rem;
+      }
+  
+      #hamburger-menu {
+        display: block;
+      }
+  
+      #header-logo {
+        display: none;
+      }
+      .banner-top .box .img-fluid {
+        width: 100% !important;
+      }
+      .gym-bg-content
+      {
+        margin-left: 15%;
+      }
+      .membership-cards-box .inner-container {
+        min-height: 500px;
+        background-color: #fff;
+        padding: 1rem 1rem !important;
+      }
+      .personal-trainer-box
+      {
+        min-height: 550px;
+        background-size: cover;
+      }
+    }
+    @media (max-width: 600px) {
+      .membership-cards-box .inner-container {
+        min-height: 500px;
+        background-color: #fff;
+        padding: 1rem 1rem !important;
+      }
+      .personal-trainer-box
+      {
+        min-height: 550px;
+        background-size: cover;
+      }
+      .gym-bg-content
+      {
+        margin-left: 2%;
+      }
+      .gym-bg
+      {
+        display: none;
+      }
+    }
+    @media (max-width: 500px) {
+      .membership-cards-box .inner-container {
+        min-height: 400px;
+      }
+      .personal-trainer-box
+      {
+        min-height: 400px;
+        background-size: cover;
+      }
+      .gym-bg-content
+      {
+        margin-left: 2%;
+      }
+      .gym-bg
+      {
+        display: none;
+      }
+    }
+
+a.bmi{
+  text-decoration: none;
+  position: fixed;
+  top: 70%;
+  right: 0%;
+  display: inline-block;
+  text-decoration: none;
+  --c: #d7272a;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 5em;
+  height: 5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 4.7em;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+  transition: 0.4s;
+}   
+a.bmi span{
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+a.bmi:hover
+{
+  color: white;
+}
+a.bmi:hover span
+{
+    transform: translateY(0) scale(2);
+}
+a.bmi span:nth-child(1)
+{
+    --n: 1;
+}
+a.bmi span:nth-child(2)
+{
+    --n: 2;
+}
+a.bmi span:nth-child(3)
+{
+    --n: 3;
+}
+a.bmi span:nth-child(4)
+{
+    --n: 4;
+}
