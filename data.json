@@ -2,37 +2,37 @@
     {
         "type" : -1,
         "title" : "ARMS",
-        "image" : "images/workout-plan-previews-arms-600x334",
+        "image" : "https://projecttechwiz.herokuapp.com/workout-plan-previews-arms-600x334",
         "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."
     },
     {
         "type" : -1,
         "title" : "CHEST",
-        "image" : "images/workout-plan-previews-chest-600x334",
+        "image" : "https://projecttechwiz.herokuapp.com/workout-plan-previews-chest-600x334",
         "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."
     },
     {
         "type" : -1,
         "title" : "BACK",
-        "image" : "images/workout-plan-previews-back",
+        "image" : "https://projecttechwiz.herokuapp.com/workout-plan-previews-back",
         "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."
     },
     {
         "type" : 1,
         "title" : "LEGS",
-        "image" : "workout-plan-previews-legs-600x334",
+        "image" : "https://projecttechwiz.herokuapp.com/workout-plan-previews-legs-600x334",
         "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."
     },
     {
         "type" : 1,
         "title" : "ABDOMINALS",
-        "image" : "images/workout-plan-previews-abs-600x334",
+        "image" : "https://projecttechwiz.herokuapp.com/workout-plan-previews-abs-600x334",
         "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."
     },
     {
         "type" : 1,
         "title" : "SHOULDERS",
-        "image" : "images/workout-plan-previews-shoulders-600x334",
+        "image" : "https://projecttechwiz.herokuapp.com/workout-plan-previews-shoulders-600x334",
         "content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."
     }
 ]
